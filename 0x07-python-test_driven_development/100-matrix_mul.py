@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-This module contains a function that multiplies 2 matrices
+This is a function that multiplies 2 matrices
 
 """
 
@@ -10,8 +10,8 @@ def matrix_mul(m_a, m_b):
     """This function multiplies two matrices
 
     Args:
-        m_a (list of lists of int/float): Matrix to be multiplied
-        m_b (list of lists of int/float): Matrix to be multiplied
+        m_a (list of lists of int/float): the Matrix to be multiplied
+        m_b (list of lists of int/float): the Matrix to be multiplied
 
     Raises:
         TypeError: If m_a or m_b is not a list
@@ -22,7 +22,7 @@ def matrix_mul(m_a, m_b):
         ValueError: If m_a and m_b cannot be multiplied
 
     Returns:
-        A new list which is the outcome of the multiplication
+        New list which is the outcome of the multiplication
 
     """
 

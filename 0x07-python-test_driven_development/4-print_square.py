@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
 
-This module contain a function that prints a square
+This function prints a square.
 
 """
 
 
 def print_square(size):
-    """This function prints a square with the character #
+    """It prints a square with the character #
 
     Args:
         size (int): This represents the length of the square
