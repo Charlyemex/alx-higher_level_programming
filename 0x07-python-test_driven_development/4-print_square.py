@@ -1,31 +1,31 @@
 #!/usr/bin/python3
-"""
+"""Defines a function that prints a square with the character #.
 
-This function prints a square.
-
+Attributes:
+    print_square: function that prints a square with the character #.
 """
 
 
 def print_square(size):
-    """It prints a square with the character #
+    """Prints a square with the character #.
 
     Args:
-        size (int): This represents the length of the square
+        size (int): Size of the square (1 side).
 
     Raises:
-        TypeError: If size is not an integer
-        TypeError: If size is a float and less than zero
-        ValueError: If size is less than zero
-
+        TypeError: If size is not an integer and less than 0.
+        ValueError: If size is less than 0.
     """
+    message = "size must be an integer"
 
     if not isinstance(size, int):
-        raise TypeError("size must be an integer")
-    elif size < 0:
+        raise TypeError(message)
+
+    if size < 0:
         raise ValueError("size must be >= 0")
-    elif isinstance(size, float) and size < 0:
-        raise TypeError("size must be an integer")
-    for n in range(0, size):
-        for m in range(size):
-            print("#", end="")
-        print("")
+
+    if isinstance(size, float) and size < 0:
+        raise TypeError(message)
+
+    for i in range(size):
+        print("#" * size)
